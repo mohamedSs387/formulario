@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casal de Verano de Moha</title>
+    <style>
+        /* Estilos para el formulario */
+        .formulari {
+            border-radius: 2px;
+            background-color: rgba(241, 3, 3, 0.7);
+            padding: 20px;
+            width: 300px;
+            margin: 0;
+        }
+
+        .formulari label {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body style="background-image: url('agua.png'); background-color: #FFCECB;">
+    <table width="550" bgcolor="#FFCECB" align="center">
+        <tr>
+            <td>
+                <h1 style="color:rgb(0, 0, 0)">Casal de Verano de Moha</h1>
+                <br>
+                <p>Bienvenidos a nuestro casal de verano 2023! Llena el siguiente formulario para apuntarte al casal de verano.</p>
+                <br>
+            </td>
+        </tr>
+    </table>
+
+    <img src="https://escolapiessabadell.org/wp-content/uploads/2023/04/Escolapies-Sabadell-Casal-destiu-23-Slide-i-xxss_Foto-web.png" alt="Casal de Verano">
+
+    <h1>Formulario de inscripción</h1>
+    <form class="formulari">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" value="El vostre nom" required><br><br>
+
+        <label for="cognoms">Cognoms:</label>
+        <input type="text" id="cognoms" name="cognoms" required><br><br>
+
+        <label for="edat">Edat (16-64):</label>
+        <input type="number" id="edat" name="edat" min="16" max="64" required><br><br>
+
+        <label for="menor">Menor o no:</label>
+        <input type="checkbox" id="menor" name="menor"><br><br>
+
+        <label for="tipus">Tipus d'entrada:</label>
+        <select id="tipus" name="tipus">
+            <option value="opcio1">Opció 1</option>
+            <option value="opcio2">Opció 2</option>
+            <option value="opcio3">Opció 3</option>
+        </select><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefon">Telèfon:</label>
+        <input type="tel" id="telefon" name="telefon" required><br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <input type="submit" value="Comprar">
+    </form>
+</body>
+</html>
